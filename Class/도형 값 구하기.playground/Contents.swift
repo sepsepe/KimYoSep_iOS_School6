@@ -4,7 +4,19 @@ import UIKit
 
 var str = "Hello, playground"
 
-
+func sampleInt(num1: Int, num2: Int) -> Int
+{
+    switch sampleInt(num1: 0, num2: 0) {
+    case 1 where num1 > num2 :
+        return num1
+    case 2 where num1 < num2 :
+        return num2
+    default:
+        return num1
+    }
+    return sampleInt(num1: 0, num2: 0)
+}
+sampleInt(num1: 3, num2: 4)
 
 // A(Area) 넓이, P(Perimeter) 직사각형 둘레, C(Circumference) 원의 둘레, V(Volume) 부피
 class Square
